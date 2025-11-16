@@ -46,24 +46,53 @@
   transition: 0.3s;
 }
 
+.FirstArt,
+.SecondArt {
+  display: flex;
+}
+
+.ArtText {
+  width: 50%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4%;
+}
+.ArtButton,
+.ArtButton2 {
+  width: 20%;
+  text-decoration: none;
+  color: white;
+  background-color: #4853cd;
+  padding: 2%;
+  margin: 2% auto;
+  border-radius: 40px;
+}
+.ArtButton2 {
+  background-color: #c13544;
+}
+.ArtImage {
+  width: 50%;
+  margin: 1.5%;
+}
+
 .End {
   display: flex;
   justify-content: space-between;
   align-items: start;
-  background-color: black;
-
+  background-color: #bdbdbd;
 }
 .EndMenu {
   list-style-type: none;
   flex: 1;
-  
 }
 .EndMenu h3 {
-  color: white;
-    padding: 3%;
+  color: black;
+  padding: 3%;
 }
 .EndMenuLiA {
-  color: white;
+  color: black;
   text-decoration: none;
   display: block;
   padding: 3%;
