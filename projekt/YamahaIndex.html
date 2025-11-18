@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./source/css/YIndexStyles.css" />
   </head>
   <body>
+    <script src="./source/js/YIndexJS.js"></script>
     <header class="Header">
       <h1>YAMAHA</h1>
     </header>
@@ -51,10 +52,74 @@
         </article>
       </section>
 
-      <section class="Galery"></section>
+      <section id="Galery">
+        <img
+          id="mainImage"
+          src="./source/img/YamahaModel1.jpg"
+          alt="Hlavní obrázek Yamaha"
+        />
+
+        <!-- Miniatury -->
+        <div class="thumbnail-container">
+          <img
+            class="thumbnail active"
+            src="./source/img/YamahaModel1.jpg"
+            onclick="zmenObrazek('./source/img/YamahaModel1.jpg', this)"
+            alt="Yamaha model 1"
+          />
+          <img
+            class="thumbnail"
+            src="./source/img/YamahaModel2.jpg"
+            onclick="zmenObrazek('./source/img/YamahaModel2.jpg', this)"
+            alt="Yamaha model 2"
+          />
+          <img
+            class="thumbnail"
+            src="./source/img/YamahaModel3.jpg"
+            onclick="zmenObrazek('./source/img/YamahaModel3.jpg', this)"
+            alt="Yamaha model 3"
+          />
+          <img
+            class="thumbnail"
+            src="./source/img/YamahaModel4.jpg"
+            onclick="zmenObrazek('./source/img/YamahaModel4.jpg', this)"
+            alt="Yamaha model 4"
+          />
+          <img
+            class="thumbnail"
+            src="./source/img/YamahaModel5.jpg"
+            onclick="zmenObrazek('./source/img/YamahaModel5.jpg', this)"
+            alt="Yamaha model 5"
+          />
+          <img
+            class="thumbnail"
+            src="./source/img/YamahaModel6.jpg"
+            onclick="zmenObrazek('./source/img/YamahaModel6.jpg', this)"
+            alt="Yamaha model 6"
+          />
+          <img
+            class="thumbnail"
+            src="./source/img/YamahaModel7.jpg"
+            onclick="zmenObrazek('./source/img/YamahaModel7.jpg', this)"
+            alt="Yamaha model 7"
+          />
+          <img
+            class="thumbnail"
+            src="./source/img/YamahaModel8.jpg"
+            onclick="zmenObrazek('./source/img/YamahaModel8.jpg', this)"
+            alt="Yamaha model 8"
+          />
+          <img
+            class="thumbnail"
+            src="./source/img/YamahaModel9.jpg"
+            onclick="zmenObrazek('./source/img/YamahaModel9.jpg', this)"
+            alt="Yamaha model 9"
+          />
+        </div>
+      </section>
     </main>
 
-    <footer class="End">
+    <footer class="Footer">
       <ul class="EndMenu">
         <h3>FIREMNÍ</h3>
         <li><a class="EndMenuLiA" href="">Společnost</a></li>
@@ -88,5 +153,10 @@
         </li>
       </ul>
     </footer>
+    <end class="End">
+      <a>jazyk</a>
+      <p>Copy</p>
+      <a>Soubory cookie</a>
+    </end>
   </body>
 </html>

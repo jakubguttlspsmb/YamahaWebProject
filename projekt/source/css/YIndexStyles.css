@@ -39,7 +39,8 @@
   color: black;
   text-decoration: none;
   display: block;
-  padding: 3%;
+  padding: 8%;
+  box-shadow: 1px 1px black;
 }
 .MenuLiA:hover {
   background-color: rgb(0, 0, 0, 0.2);
@@ -77,6 +78,7 @@
   margin: 1.5%;
 }
 
+.Footer,
 .End {
   display: flex;
   justify-content: space-between;
@@ -99,4 +101,53 @@
 }
 .EndMenuLiA:hover {
   text-decoration: underline;
+}
+
+.End {
+  padding: 3%;
+}
+
+#Galery {
+  text-align: center;
+  padding: 40px 20px;
+  display: flex;
+}
+
+#mainImage {
+  width: 80%;
+  max-width: 600px;
+  height: 400px;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  transition: opacity 0.3s ease;
+}
+
+.thumbnail-container {
+  width: 50%;
+  display: flex;
+  justify-content: start;
+  gap: 3%;
+  flex-wrap: wrap;
+}
+
+.thumbnail {
+  flex: 0 0 calc(33.333% - 20px);
+  width: 0%;
+  height: 30%;
+  object-fit: cover;
+  cursor: pointer;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.thumbnail:hover {
+  border-color: #007bff;
+  transform: scale(1.05);
+}
+
+.thumbnail.active {
+  border-color: #ff0000;
+  border-width: 3px;
 }
