@@ -60,19 +60,26 @@
   justify-content: center;
   gap: 4%;
 }
-.ArtButton,
-.ArtButton2 {
+.ArtButton {
   width: 20%;
   text-decoration: none;
   color: white;
-  background-color: #4853cd;
   padding: 2%;
   margin: 2% auto;
   border-radius: 40px;
+  transition: all 0.3s ease;
 }
-.ArtButton2 {
+
+.redbc {
   background-color: #c13544;
 }
+.bluebc {
+  background-color: #4853cd;
+}
+.ArtButton:hover {
+  transform: scale(1.05);
+}
+
 .ArtImage {
   width: 50%;
   margin: 1.5%;
@@ -108,9 +115,9 @@
 }
 
 #Galery {
-  text-align: center;
   padding: 40px 20px;
   display: flex;
+  justify-content: center;
 }
 
 #mainImage {
@@ -118,7 +125,6 @@
   max-width: 600px;
   height: 400px;
   object-fit: cover;
-  margin-bottom: 20px;
   border-radius: 10px;
   transition: opacity 0.3s ease;
 }
@@ -132,7 +138,7 @@
 }
 
 .thumbnail {
-  flex: 0 0 calc(33.333% - 20px);
+  flex: 0 0 calc(33.333% - 20px); /* */
   width: 0%;
   height: 30%;
   object-fit: cover;
