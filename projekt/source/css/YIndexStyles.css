@@ -40,6 +40,8 @@
 .MenuNav {
   position: sticky;
   top: 0;
+  z-index: 1000;
+  width: 100%;
 }
 
 .Menu {
@@ -47,9 +49,7 @@
   list-style-type: none;
   justify-content: space-between;
   align-items: center;
-  z-index: 1000;
   background: var(--color-white);
-  width: 100%;
 }
 
 .MenuLi {
