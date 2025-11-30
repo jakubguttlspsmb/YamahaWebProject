@@ -1,5 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
+:root {
+  --color-primary-blue: #4853cd;
+  --color-primary-red: #c13544;
+  --color-neutral-dark: #333;
+  --color-header-dark: rgb(0, 0, 0, 0.6);
+  --color-neutral-light: #bdbdbd;
+  --color-white: white;
+
+  --space-xs: 4px;
+  --space-s: 8px;
+  --space-m: 16px;
+  --space-l: 24px;
+  --space-xl: 48px;
+  --space-xxl: 80px;
+  --space-xxxl: 160px;
+}
+
 * {
   font-family: "Roboto", sans-serif;
   margin: 0%;
@@ -8,18 +25,20 @@
 }
 .Header {
   background-image: url("../img/img1_upscaled.jpg");
-  background-color: rgb(0, 0, 0, 0.6);
+  background-color: var(--color-header-dark);
   background-blend-mode: darken;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  padding: 5%;
-  padding-left: 5%;
+  padding: var(--space-xxl);
+  padding-left: var(--space-xxxl);
   color: white;
+}
+.MenuNav {
+  position: sticky;
 }
 
 .Menu {
-  position: sticky;
   top: 0;
   display: flex;
   list-style-type: none;
