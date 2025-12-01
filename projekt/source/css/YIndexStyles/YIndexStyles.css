@@ -132,7 +132,7 @@
 }
 
 .Button {
-  width: 20%;
+  width: 50%;
   text-decoration: none;
   color: var(--color-white);
   display: block;
@@ -277,10 +277,6 @@
 
   .MenuLi {
     flex: 0 0 50%;
-  }
-
-  .Button {
-    width: 50%;
   }
 
   .Footer {

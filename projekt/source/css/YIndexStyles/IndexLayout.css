@@ -1,0 +1,48 @@
+/* ========================================= */
+/* 2. LAYOUT */
+/* ========================================= */
+
+.Header {
+  background-image: url("./img1_upscaled.jpg");
+  background-color: var(--color-header-dark);
+  background-blend-mode: darken;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: var(--space-xxxl);
+  padding-left: var(--space-xxxl);
+  color: var(--color-white);
+}
+.MenuNav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+}
+
+.FirstArt,
+.SecondArt {
+  display: flex;
+  padding: var(--space-l);
+  gap: var(--space-l);
+}
+
+#Galery {
+  padding: var(--space-xxl) var(--space-xs);
+  display: flex;
+  gap: var(--space-xl);
+  justify-content: center;
+}
+
+.Footer,
+.End {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  background-color: var(--color-neutral-dark);
+  color: var(--color-white);
+}
+
+.End {
+  padding: var(--space-xl);
+}

@@ -1,0 +1,15 @@
+/* ========================================= */
+/* 4. UTILITIES */
+/* ========================================= */
+
+.u-text-center {
+  text-align: center;
+}
+
+.u-text-color-white {
+  color: var(--color-white);
+}
+
+.u-text-decor-none {
+  text-decoration: none;
+}

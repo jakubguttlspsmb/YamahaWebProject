@@ -1,0 +1,45 @@
+/* ========================================= */
+/* 5. PAGES */
+/* ========================================= */
+
+@media (max-width: 1200px) {
+  #Galery {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 768px) {
+  .FirstArt,
+  .SecondArt {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .ArtText,
+  .ArtImage {
+    width: 100%;
+    margin: 0;
+  }
+
+  .Header {
+    padding-left: var(--space-l);
+  }
+
+  .Menu {
+    flex-wrap: wrap;
+  }
+
+  .MenuLi {
+    flex: 0 0 50%;
+  }
+
+  .Footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .EndMenu {
+    width: 100%;
+    padding-bottom: var(--space-m);
+  }
+}

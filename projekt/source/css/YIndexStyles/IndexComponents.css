@@ -1,0 +1,141 @@
+/* ========================================= */
+/* 3. COMPONENTS */
+/* ========================================= */
+
+.Menu {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--color-white);
+}
+
+.MenuLi {
+  flex: 1;
+}
+
+.MenuLiA {
+  color: var(--color-neutral-dark);
+  font-size: var(--font-size-h3);
+  text-decoration: none;
+  display: block;
+  padding: var(--space-l);
+  box-shadow: 1px 1px var(--color-black);
+}
+
+.MenuLiA:hover,
+.MenuLiA:focus {
+  background-color: var(--color-menu-dark);
+  transition: 0.3s;
+}
+
+.ArtText {
+  width: 50%;
+  font-size: var(--font-size-h3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--space-m);
+}
+
+.ArtImage {
+  width: 50%;
+  margin: var(--space-xl);
+}
+
+.Button {
+  width: 50%;
+  text-decoration: none;
+  color: var(--color-white);
+  display: block;
+  padding: var(--space-l);
+  margin: var(--space-l) auto;
+  border-radius: var(--space-xl);
+  transition: all 0.3s ease;
+}
+
+.Button--red {
+  background-color: var(--color-primary-red);
+}
+
+.Button--blue {
+  background-color: var(--color-primary-blue);
+}
+
+.Button:hover,
+.Button:focus {
+  transform: scale(1.05);
+}
+
+.EndMenu {
+  list-style-type: none;
+  flex: 1;
+}
+
+.EndMenu h3 {
+  padding: var(--space-m);
+}
+
+.EndMenuLiA {
+  color: var(--color-white);
+  text-decoration: none;
+  display: block;
+  padding: var(--space-m);
+}
+
+.EndMenuLiA:hover,
+.EndMenuLiA:focus {
+  text-decoration: underline;
+}
+
+#mainImage {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  transition: opacity 0.3s ease;
+}
+
+.mainImageOverlay {
+  position: absolute;
+  top: var(--space-l);
+  left: var(--space-l);
+  font-size: var(--font-size-h3);
+  z-index: 10;
+}
+.mainImageContainer {
+  position: relative;
+  width: 80%;
+  max-width: 600px;
+  display: inline-block;
+}
+
+.thumbnail-container {
+  width: 50%;
+  display: flex;
+  justify-content: start;
+  gap: var(--space-l);
+  flex-wrap: wrap;
+}
+
+.thumbnail {
+  flex: 0 0 calc(33.333% - (2 * var(--space-l)) / 3); /* */
+  width: 0%;
+  height: 30%;
+  object-fit: cover;
+  background-position: center center;
+  cursor: pointer;
+  border: 2px solid transparent;
+  border-radius: var(--space-s);
+  transition: all 0.3s ease;
+}
+
+.thumbnail:hover,
+.thumbnail:focus {
+  border-color: var(--color-border-blue);
+  transform: scale(1.05);
+}
+
+.thumbnail.active {
+  border-color: var(--color-border-red);
+  border-width: 3px;
+}
