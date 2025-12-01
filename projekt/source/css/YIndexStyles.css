@@ -6,6 +6,7 @@
   --color-primary-red: #c13544;
   --color-border-red: #ff0000;
   --color-neutral-dark: #333;
+  --color-black: black;
   --color-header-dark: rgb(0, 0, 0, 0.6);
   --color-menu-dark: rgb(0, 0, 0, 0.2);
   --color-neutral-light: #bdbdbd;
@@ -62,9 +63,10 @@
   text-decoration: none;
   display: block;
   padding: var(--space-l);
-  box-shadow: 1px 1px black;
+  box-shadow: 1px 1px var(--color-black);
 }
-.MenuLiA:hover {
+.MenuLiA:hover,
+.MenuLiA:focus {
   background-color: var(--color-menu-dark);
   transition: 0.3s;
 }
@@ -72,6 +74,8 @@
 .FirstArt,
 .SecondArt {
   display: flex;
+  padding: var(--space-l);
+  gap: var(--space-l);
 }
 
 .ArtText {
@@ -82,23 +86,25 @@
   justify-content: center;
   gap: var(--space-m);
 }
-.ArtButton {
+.Button {
   width: 20%;
   text-decoration: none;
   color: var(--color-white);
-  padding: var(--space-m);
+  display: block;
+  padding: var(--space-l);
   margin: var(--space-l) auto;
   border-radius: var(--space-xl);
   transition: all 0.3s ease;
 }
 
-.redbc {
+.Button--red {
   background-color: var(--color-primary-red);
 }
-.bluebc {
+.Button--blue {
   background-color: var(--color-primary-blue);
 }
-.ArtButton:hover {
+.Button:hover,
+.Button:focus {
   transform: scale(1.05);
 }
 
@@ -112,23 +118,24 @@
   display: flex;
   justify-content: space-between;
   align-items: start;
-  background-color: var(--color-neutral-light);
+  background-color: var(--color-neutral-dark);
+  color: var(--color-white);
 }
 .EndMenu {
   list-style-type: none;
   flex: 1;
 }
 .EndMenu h3 {
-  color: black;
   padding: var(--space-m);
 }
 .EndMenuLiA {
-  color: black;
+  color: var(--color-white);
   text-decoration: none;
   display: block;
   padding: var(--space-m);
 }
-.EndMenuLiA:hover {
+.EndMenuLiA:hover,
+.EndMenuLiA:focus {
   text-decoration: underline;
 }
 
@@ -145,7 +152,7 @@
 #mainImage {
   width: 80%;
   max-width: 600px;
-  height: 400px;
+
   object-fit: cover;
   transition: opacity 0.3s ease;
 }
@@ -159,17 +166,19 @@
 }
 
 .thumbnail {
-  flex: 0 0 calc(33.333% - 20px); /* */
+  flex: 0 0 calc(33.333% - (2 * var(--space-l)) / 3); /* */
   width: 0%;
   height: 30%;
   object-fit: cover;
+  background-position: center center;
   cursor: pointer;
   border: 2px solid transparent;
   border-radius: var(--space-s);
   transition: all 0.3s ease;
 }
 
-.thumbnail:hover {
+.thumbnail:hover,
+.thumbnail:focus {
   border-color: var(--color-border-blue);
   transform: scale(1.05);
 }
@@ -177,4 +186,49 @@
 .thumbnail.active {
   border-color: var(--color-border-red);
   border-width: 3px;
+}
+
+@media (max-width: 1200px) {
+  #Galery {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 768px) {
+  .FirstArt,
+  .SecondArt {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .ArtText,
+  .ArtImage {
+    width: 100%;
+    margin: 0;
+  }
+
+  .Header {
+    padding-left: var(--space-l);
+  }
+
+  .Menu {
+    flex-wrap: wrap;
+  }
+  .MenuLi {
+    flex: 0 0 50%;
+  }
+
+  .Button {
+    width: 50%;
+  }
+
+  .Footer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .EndMenu {
+    width: 100%;
+    text-align: center;
+    padding-bottom: var(--space-m);
+  }
 }
