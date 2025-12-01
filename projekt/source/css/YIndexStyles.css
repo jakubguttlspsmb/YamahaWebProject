@@ -188,6 +188,7 @@
   top: var(--space-l);
   left: var(--space-l);
   font-size: var(--font-size-h3);
+  z-index: 10;
 }
 .mainImageContainer {
   position: relative;
