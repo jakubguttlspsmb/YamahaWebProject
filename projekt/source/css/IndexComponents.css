@@ -139,3 +139,24 @@
   border-color: var(--color-border-red);
   border-width: 3px;
 }
+
+.Text {
+  font-size: 32px;
+  color: rgba(0, 0, 0, 1);
+}
+
+.ButtonWarning {
+  background: #1d1d1dff;
+  border: black 1px solid;
+  color: rgba(209, 208, 208, 1);
+  font-size: 48px;
+  padding: 2%;
+  border-radius: 200px;
+  margin: 3%;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.ButtonWarning:hover {
+  transform: scale(1.05);
+}

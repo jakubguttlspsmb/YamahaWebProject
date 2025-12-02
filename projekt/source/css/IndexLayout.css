@@ -3,7 +3,7 @@
 /* ========================================= */
 
 .Header {
-  background-image: url("./img1_upscaled.jpg");
+  background-image: url("../img/noncopy/img1_upscaled.jpg");
   background-color: var(--color-header-dark);
   background-blend-mode: darken;
   background-repeat: no-repeat;
@@ -45,4 +45,13 @@
 
 .End {
   padding: var(--space-xl);
+}
+
+.Body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 15%;
+  text-align: center;
+  background-color: #c13444;
 }
