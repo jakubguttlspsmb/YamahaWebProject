@@ -32,7 +32,9 @@
   .MenuLi {
     flex: 0 0 100%;
   }
-
+  .MenuLiA {
+    padding: var(--space-xs);
+  }
   .Footer {
     flex-direction: column;
     align-items: center;
