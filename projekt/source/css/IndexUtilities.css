@@ -13,3 +13,6 @@
 .u-text-decor-none {
   text-decoration: none;
 }
+.u-text-size-h3 {
+  font-size: var(--font-size-h3);
+}
